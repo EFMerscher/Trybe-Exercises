@@ -48,7 +48,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-5: _[Projeto - Arte com Pixels]()_
 - [X] 5-6: _[Projeto - Lista de Tarefas]()_
 - [X] 5-7: _[Projeto Bônus - Meme Generator]()_
-- [ ] 5-7: _[Projeto Bônus - Adivinhe a Cor]()_
+- [X] 5-7: _[Projeto Bônus - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto Bônus - Carta Misteriosa]()_
 
 ##### Bloco 6: HTML & CSS: Forms, Flexbox e Responsivo
