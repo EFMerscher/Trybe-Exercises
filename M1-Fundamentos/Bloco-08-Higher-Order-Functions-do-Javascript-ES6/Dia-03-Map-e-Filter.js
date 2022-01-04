@@ -188,5 +188,5 @@ function oldBooks() {
 // 7 - Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
 const expectedResult = 'O Senhor dos Anéis';
 
-function authorWith3DotsOnName() {
+//function authorWith3DotsOnName() {
 }
