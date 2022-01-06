@@ -7,7 +7,7 @@ Porcentagem >= 50 -> E
 Porcentagem < 50 -> F
 O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100. */
 
-let note = 69;
+let note = 100;
 
 if (note > 100 || note < 0) {
   return console.log('Invalid note')

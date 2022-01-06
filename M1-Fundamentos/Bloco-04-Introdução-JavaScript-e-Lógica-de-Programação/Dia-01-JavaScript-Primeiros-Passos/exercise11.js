@@ -26,7 +26,7 @@ Dica: que tal identificar as alíquotas com variáveis de nomes explicativos? */
 let aliquotINSS;
 let aliquotIR;
 
-const grossSalary = 3500.00;
+const grossSalary = 4200.00;
 
 if (grossSalary <= 1556.94) {
   aliquotINSS = grossSalary * 0.08;
@@ -51,3 +51,5 @@ if (baseSalary <= 1903.98) {
 } else {
   aliquotIR = (baseSalary * 0.275) - 869.36;
 };
+
+console.log('Salary: ' + (baseSalary - aliquotIR));

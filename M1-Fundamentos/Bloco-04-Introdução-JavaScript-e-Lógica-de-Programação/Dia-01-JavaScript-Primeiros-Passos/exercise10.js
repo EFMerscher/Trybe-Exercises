@@ -13,7 +13,6 @@ const totalCostValue = productCust + tax;
 const profit = saleValue - totalCostValue;
 const totalProfit = profit * 1000;
 
-
 if (productCust >= 0 || saleValue >= 0) {
 console.log(totalProfit)
 }
