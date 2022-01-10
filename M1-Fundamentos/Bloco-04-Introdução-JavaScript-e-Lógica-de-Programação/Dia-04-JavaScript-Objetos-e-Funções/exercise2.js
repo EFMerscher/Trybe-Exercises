@@ -27,3 +27,17 @@ function indexLargestNumber(number) {
   return indexLargest;
 }
 console.log(indexLargestNumber([2, 3, 6, 7, 10, 1])); // 4
+
+// 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+
+function indexSmallestNumber(number) {
+  let indexSmallest = 0;
+  for (let indice in number) {
+    if (number[indice] < number[indexSmallest]) {
+      indexSmallest = indice;
+    }
+  }
+  return indexSmallest;
+}
+console.log(indexSmallestNumber([2, 3, 6, 7, 10, 1])); // 5
+console.log(indexSmallestNumber([-2, -3, -6, -7, -10, -1])); // 4
