@@ -21,3 +21,15 @@ console.log(`Seja bem vindo(a), ${info.personagem}`);
 
 info['recorrente'] = 'Sim';
 console.log(info.recorrente);
+
+// 3 - Faça um for/in que mostre todas as chaves do objeto. Valor esperado no console:
+/*
+personagem
+origem
+nota
+recorrente 
+*/
+
+for (const key in info) {
+  console.log(key);
+}
