@@ -14,3 +14,16 @@ function palindromo(string) {
 }
 console.log(palindromo('arara')); // true
 console.log(palindromo('teste')); // false
+
+// 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+
+function indexLargestNumber(number) {
+  let indexLargest = 0;
+  for (let indice in number) {
+    if (number[indice] > number[indexLargest]) {
+      indexLargest = indice;
+    }
+  }
+  return indexLargest;
+}
+console.log(indexLargestNumber([2, 3, 6, 7, 10, 1])); // 4
