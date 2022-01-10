@@ -41,3 +41,16 @@ function indexSmallestNumber(number) {
 }
 console.log(indexSmallestNumber([2, 3, 6, 7, 10, 1])); // 5
 console.log(indexSmallestNumber([-2, -3, -6, -7, -10, -1])); // 4
+
+// 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+
+function largestName(arrayNames) {
+  let largestName = arrayNames[0];
+  for (const name of arrayNames) {
+    if (name.length > largestName.length) {
+      largestName = name
+    }
+  }
+  return largestName;
+}
+console.log(largestName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])); // Fernanda
