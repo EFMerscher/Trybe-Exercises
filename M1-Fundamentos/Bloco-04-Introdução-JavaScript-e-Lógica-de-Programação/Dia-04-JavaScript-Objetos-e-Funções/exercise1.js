@@ -61,3 +61,7 @@ let info2 = {
   nota: 'O último MacPatinhas',
   recorrente: 'Sim'
 };
+
+for (const key in info) {
+  console.log(`${info[key]} e ${info2[key]}`);
+}
