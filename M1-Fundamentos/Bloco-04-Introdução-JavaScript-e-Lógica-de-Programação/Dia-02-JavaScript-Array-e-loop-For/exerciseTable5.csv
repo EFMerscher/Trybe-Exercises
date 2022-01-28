@@ -1,0 +1,11 @@
+highestValue , number , numbers > highestValue , highestValue
+    0        ,    5   , true                   ,      5
+    5        ,   9    ,  true                  ,      9
+    9        ,   3    , false                  ,     9
+    9        ,  19    , true                   , 19
+    19       ,  70    ,    true                ,     70
+    70       ,   8    ,   false                ,    70
+    70       ,  100   ,    true                ,     100
+    100      ,  2     ,   false                ,     100
+    100      , 35     ,   false                ,     100
+    100      ,  27    ,    false               ,      100 
