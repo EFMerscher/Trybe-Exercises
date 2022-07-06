@@ -1,29 +1,33 @@
-    // src/App.js
-    import React from 'react';
+import React from 'react';
 
-    class App extends React.Component {
+class App extends React.Component {
+  constructor() {
+    super();
+    this.handleButtonOne = this.handleButtonOne.bind(this);
+    this.handleButtonTwo = this.handleButtonTwo.bind(this);
+    this.handleButtonThree = this.handleButtonThree.bind(this);
+  }
 
-      handleButtonOne() {
-        console.log('Clicou no botão 1!');
-      }
-      
-      handleButtonTwo() {
-        console.log('Clicou no botão 2!');
-      }
-      
-      handleButtonThree() {
-        console.log('Clicou no botão 3!');
-      }
+  handleButtonOne() {
+    console.log('"this" do botão 1 :', this);
+  }
 
-      render() {
-        return (
-          <div>
-            <button onClick={ this.handleButtonOne }>Botão 1</button>
-            <button onClick={ this.handleButtonTwo }>Botão 2</button>
-            <button onClick={ this.handleButtonThree }>Botão 3</button>
-          </div>
-        );
-      }
-    }
+  handleButtonTwo() {
+    console.log('"this" do botão 2 :', this);
+  }
 
-    export default App;
+  handleButtonThree() {
+    console.log('"this" do botão 3 :', this);
+  }
+  render() {
+    return (
+      <div>
+        <button onClick={this.handleButtonOne}>Botão 1</button>
+        <button onClick={this.handleButtonTwo}>Botão 2</button>
+        <button onClick={this.handleButtonThree}>Botão 3</button>
+      </div>
+    );
+  }
+}
+
+export default App;
