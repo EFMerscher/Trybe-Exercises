@@ -18,26 +18,30 @@ class App extends React.Component {
   handleButtonOne() {
     this.setState(({ clicksBtnOne }) => ({
       clicksBtnOne: clicksBtnOne + 1,
-    }));
+    }), () => {
+      console.log(`Botão 1 ${this.getButtonColor(this.state.clicksBtnOne)}`);
+    });
   }
   
   handleButtonTwo() {
     this.setState(({ clicksBtnTwo }) => ({
       clicksBtnTwo: clicksBtnTwo + 1,
-    }));
+    }), () => {
+      console.log(`Botão 2 ${this.getButtonColor(this.state.clicksBtnTwo)}`);
+    });
   }
   
   handleButtonThree() {
     this.setState(({ clicksBtnThree }) => ({
       clicksBtnThree: clicksBtnThree + 1,
-    }));
+    }), () => {
+      // Aqui imprimimos a cor no console após o setState atualizar
+      // a quantidade de clicks no botão
+      console.log(`Botão 3 ${this.getButtonColor(this.state.clicksBtnThree)}`);
+    });
   }
 
-  // Para essa função, não precisamos utilizar o bind porque ela é utilizada
-  // apenas dentro do contexto do componente App
   getButtonColor(num) {
-    // Essa função contém um ternário que realiza a lógica para mudarmos
-    // a cor do botão para verde quando for um número par
     return num % 2 === 0 ? 'green' : 'white';
   }
 
@@ -47,9 +51,6 @@ class App extends React.Component {
       <div>
         <button
           onClick={ this.handleButtonOne }
-          // Para renderizarmos as cores, precisamos acrescentar a função
-          // que contém a nossa lógica ao "inline style", passando o estado
-          // correspondente como parâmetro
           style={{ backgroundColor: this.getButtonColor(clicksBtnOne) }}
         >
           Botão 1 | Count = { clicksBtnOne }
