@@ -145,7 +145,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 19: Introdução à SQL
 
-- [ ] 19-1: _Introdução - Back-end_
+- [X] 19-1: _Introdução - Back-end_
 - [ ] 19-1: _Introdução - Bancos de dados relacionais_
 - [ ] 19-1: _Banco de dados SQL_
 - [ ] 19-2: _Encontrando dados em um banco de dados_
